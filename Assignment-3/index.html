@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My personal Page</title>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+            crossorigin="anonymous">
+        <script>
+            function addInfo() {
+              var formData = new FormData(document.querySelector('form'));
+              var element = '';
+              for(var pair of formData.entries()) {
+                element += '<b>' + pair[0] + '</b>' + ' ' + pair[1] + '<br>'; 
+              }
+              var div = document.createElement("div");
+              div.innerHTML = element;
+              div.className = 'card';
+              document.body.appendChild(div);
+              return false;
+            }
+        </script>
+    </head>
+    <body>
+        <header class="navbar">
+            <img src="hyf-logo.png" alt="site logo">
+            <ul class="menulink">
+                <li>
+                    <a href="#about_me">ABout ME</a>
+                </li>
+                <li>
+                    <a href="#skills">SkiLLs</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#news">News</a>
+                </li>
+                <li>
+                    <a href="#contactinfo">Contact Me</a>
+                </li>
+            </ul>
+        </header>
+        <!--Container -->
+        <div class="container">
+            <table class="aboutme" id="about_me">
+                <tr>
+                    <!-- Profile picture column-->
+                    <td class="profile_img_col">
+                        <img src="pic.png" alt="Sumon pic">
+                        <button>Download resume</button>
+                    </td>
+                    <!-- Summary column-->
+                    <td class="summary_col">
+                        <h1>Hi I'm
+                            <span>Azizul Huq</span>
+                        </h1>
+                        <p>Web Developer</p>
+                        <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                            ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                            enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                            dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+                            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+                            ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
+                            iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+                            dolorem eum fugiat quo voluptas nulla pariatur
+                        </p>
+                        <!-- Personal info-->
+                        <table class="personal_info">
+                            <tr>
+                                <td>Age</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>Nationality</td>
+                                <td>Bangladeshi</td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>Grostedet</td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td>71453226</td>
+                            </tr>
+                            <tr>
+                                <td>Skype</td>
+                                <td>asumon</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>asumon@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>WebSite</td>
+                                <td><a href="https://github.com/">ClickMe</a></td>
+                            </tr>
+                        </table>
+                        <!-- Social link-->
+                        <div class="social_icon">
+                            <i class="fab fa-github"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!-- Skills section-->
+            <div class="section" id="skills">
+                <h2><em>My Skills</em></h2>
+                <h3>Web Development Skills</h3>
+                <p> Lorem ipsum dskjf dsf dsnjf dsf kdfkdsf kdsfkdsfknnds kfndsfn dskj fkdslfn dsfdf sfndsfnknfjk</p>
+                <div class="skills_progress_bar">
+                    <h6>HTML</h6>
+                    <div class="progress-bar blue stripes">
+                        <span style="width: 60%">60%</span>
+                    </div>
+                </div>
+                <div class="skills_progress_bar">
+                    <h6>CSSS</h6>
+                    <div class="progress-bar blue stripes">
+                        <span style="width: 50%">50%</span>
+                    </div>
+                </div>
+                <div class="skills_progress_bar">
+                    <h6>JaVascript </h6>
+                    <div class="progress-bar blue stripes">
+                        <span style="width: 70%">70%</span>
+                    </div>
+                </div>
+                <div class="skills_progress_bar">
+                    <h6>DataBase</h6>
+                    <div class="progress-bar blue stripes">
+                        <span style="width: 30%">30%</span>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Skills secttion-->
+            <!-- Protfoli-->
+            <div class="section" id="portfolio">
+                <h2><em>Portfolio</em></h2>
+                <div class="flex-container">
+                    <figure class="encapsulate">
+                        <!--img src="img/portfolio-1.png" alt="1"-->
+                        <img class="imggallery" src="Images/assembling.gif" alt="Assembling Computer">
+                        <figcaption>
+                            A view of the pulpit rock in Norway.
+                            <p class="down"> something something</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="encapsulate">
+                        <!--img src="img/portfolio-2.png" alt="1"-->
+                        <img class="imggallery" src="Images/cisco-router.jpg" alt="Assembling Computer">
+                        <figcaption>
+                            A view of the pulpit rock in Norway.
+                            <p class="down"> something something</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="encapsulate">
+                        <!--img src="img/portfolio-3.png" alt="1"-->
+                        <img class="imggallery" src="Images/computer_hardware.jpg" alt="Assembling Computer">
+                        <figcaption>
+                            A view of the pulpit rock in Norway.
+                            <p class="down"> something something</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="encapsulate">
+                        <!--img src="img/portfolio-4.png" alt="1"-->
+                        <img class="imggallery" src="Images/datacenter.jpg" alt="Assembling Computer">
+                        <figcaption>A view of the pulpit rock in Norway.</figcaption>
+                        <p class="down"> something something</p>
+                    </figure>
+                    <figure class="encapsulate">
+                        <!--img src="img/portfolio-5.png" alt="1"-->
+                        <img class="imggallery" src="Images/router_mb.jpg" alt="Assembling Computer">
+                        <figcaption>A view of the pulpit rock in Norway.</figcaption>
+                        <p class="down"> something something</p>
+                    </figure>
+                    <figure class="encapsulate">
+                        <!--img src="img/portfolio-6.png" alt="1"-->
+                        <img class="imggallery" src="Images/webserver.png" alt="Assembling Computer">
+                        <figcaption>A view of the pulpit rock in Norway.</figcaption>
+                        <p class="down"> something something</p>
+                    </figure>
+                </div>
+            </div>
+            <!-- End of  Protfoli-->
+            <!--Start Blog Section-->
+            <div class="section" id="news">
+                <h2><em>News</em></h2>
+                <div class="newscontainer">
+                    <div class="twitter">
+                        <div class="checkbox1">
+                            <input type="checkbox" checked="checked">
+                        </div>
+                        <div class="socialblog">
+                            <h3>TWITTER</h3>
+                        </div>
+                        <ul>
+                            <li><span>@abcde:</span>To explore this, we need to add a header underneath our menu. Add the following markup to flexbox.html after the .menu-container element:
+                            </li>
+                            <li><span>@abcde:</span>To explore this, we need to add a header underneath our menu. Add the following markup to flexbox.html after the .menu-container element:
+                            </li>
+                            <li><span>@abcde:</span>To explore this, we need to add a header underneath our menu. Add the following markup to flexbox.html after the .menu-container element:
+                            </li>
+                            <li><span>@abcde:</span>To explore this, we need to add a header underneath our menu. Add the following markup to flexbox.html after the .menu-container element:
+                            </li>
+                            <li><span>@abcde:</span>To explore this, we need to add a header underneath our menu. Add the following markup to flexbox.html after the .menu-container element:
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="blog">
+                        <span class="checkbox1">
+                        <input type="checkbox" checked="checked">
+                        </span>
+                        <div class="socialblog">
+                            <h3>BLOG</h3>
+                        </div>
+                        <img class="blogimg" src="Images/cloud-computing.jpg" alt="Cloud Computing">
+                        <h3>The Importance of User Exprience</h3>
+                        <a>To explore this, we need to add a header underneath our menu. Add the following markup to flexbox.html after the .menu-container element:
+                        </a>
+                        <p>Posted by <span>sumon</span> at 06 May 2018</p>
+                    </div>
+                    <!--Instagram Images container started-->
+                    <div class="Instagram">
+                        <div class="checkbox1">
+                            <input type="checkbox" checked="checked">
+                        </div>
+                        <div class="socialblog">
+                            <h3>INSTAGRAM</h3>
+                        </div>
+                        <div class="innerflex">
+                            <ul>
+                                <li class="photo-grid">
+                                    <img src="images/nature1.jpg" alt="image">
+                                </li>
+                                <li class="photo-grid">
+                                    <img src="images/nature2.jpg" alt="image">
+                                </li>
+                                <li class="photo-grid">
+                                    <img src="images/nature3.jpg" alt="image">
+                                </li>
+                                <li class="photo-grid">
+                                    <img src="images/nature4.jpg" alt="image">
+                                </li>
+                                <li class="photo-grid">
+                                    <img src="images/nature5.jpg" alt="image">
+                                </li>
+                                <li class="photo-grid">
+                                    <img src="images/nature6.jpg" alt="image">
+                                </li>
+                                <li class="photo-grid">
+                                    <img src="images/nature7.jpg" alt="image">
+                                </li>
+                                <li class="photo-grid">
+                                    <img src="images/nature8.jpg" alt="image">
+                                </li>
+                                <li class="photo-grid">
+                                    <img src="images/nature9.jpeg" alt="image">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="checkit">
+                            <input id="checkid" type="checkbox" value="test" />
+                            <label for="checkid">Follow on Instagram</label>
+                        </div>
+                    </div>
+                    <!--Instagram Images End-->
+                </div>
+            </div>
+            <!--Container end for News-->
+            <!--End Blog Section-->
+            <!--Start Contact Form-->
+            <div class="section" id="contactinfo">
+                <h2><em>Contact Me</em></h2>
+                <div class="wrapper">
+                    <div class="info">
+                        <h2>Contact <span>me</span></h2>
+                        <ul>
+                            <li><i class="fa fa-road"></i>Amaliegade 18</li>
+                            <li><i class="fa fa-phone"></i>+45 33 40 39 00</li>
+                            <li><i class="fa fa-envelope"></i>hack@your.future</li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <form>
+                            <p>
+                                <label>Name</label>
+                                <input type="text" name="name">
+                            </p>
+                            <p>
+                                <label>Company</label>
+                                <input type="text" name="company">
+                            </p>
+                            <p>
+                                <label>Email Address</label>
+                                <input type="email" name="email">
+                            </p>
+                            <p>
+                                <label>Phone Number</label>
+                                <input type="text" name="phone">
+                            </p>
+                            <p class="full">
+                                <label>Message</label>
+                                <textarea name="message" rows="5"></textarea>
+                            </p>
+                            <p class="full">
+                                <button onclick="addInfo()" type="button">Submit</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <!--End form-->
+            </div>
+        </div>
+        <!-- end of container-->
+        <div class="footer">
+            <p>Copyright © HackYourFuture 2017</p>
+        </div>
+    </body>
+</html>

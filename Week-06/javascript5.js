@@ -23,34 +23,6 @@ document.write("Telephone : " + student.telephone + "<br>");
 document.write("PostCode : " + student.postCode + "<br>");
 document.write("Course Name : " + student.course + "<br>");
 document.write("Grade : " + student.grade + "<br>");
-
-
-for ( var i = 1; i <= 1000; i++ )
-{
-  if ( i%30 === 0 && i%50 === 0 )
-  {
-    console.log( i + " FizzBuzz" );
-  //document.write(i + " FizzBuzz");
-  }
-  else if ( i%30 === 0 ) 
-  {
-    console.log(i+ " Fizz" );
-    //document.write(i + " Fizz");
-  }
-  else if ( i%50 === 0 ) 
-  {
-    console.log(i+ " Buzz" );
-      //document.write(i + "Buzz");
-  }
-  else
-  {
-    console.log(i);
-      document.write(i);
-  }
-}
-
-document.write('</em><br/>');
-
 */
 document.write('</em><br/>');
 document.write('</em><br/>');

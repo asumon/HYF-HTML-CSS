@@ -16,8 +16,8 @@ btn.addEventListener("click",function(ourData) {
     ourRequest.onload=function() {
    
         const ourData= JSON.parse(ourRequest.responseText);
-        console.log('You Clicked Me');
-        console.log(ourData);
+       console.log("You Clicked Me");
+       console.log(ourData);
         HtmlFetch(ourData);
 
 

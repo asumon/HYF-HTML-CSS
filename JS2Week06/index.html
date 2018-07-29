@@ -1,34 +1,32 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--link rel="stylesheet" type="text/css" href="main.css"-->
-    <title>Hack You Future, JavaScript Week 06 Homework</title>
-</head>
-<body>
-    <div id="mainWrapper">
-        <h1>Homework JavaScript Week 06</h1>
-        
-        <p>List Of Data</p>
-        <button id ="btn"> Click Me</button>
-
-        <div id="exc">Name:</div>
-
-        <div id ="apilink">Link </div>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <title>Hack You Future, JavaScript Week 06 Homework</title>
+   </head>
+   <body>
+      <div id="mainWrapper">
+         <h1>JavaScript Week 06</h1>
+         <button id ="btn"> SHOW-REPOSITORIES</button>
+         <button id ="clear"> Clear</button>
+         <div id = repo> </div>
+         <form id="searchForm">
+            <input type="text" name="searchIteam" class="search" placeholder="Type your query...">
+            <button id="search-btn" class="btn">Search repositories</button>
+         </form>
+         <table id='list'>
+            <thead>
+               <tr>
+                  <th>Name</th>
+                  <th>Repo</th>
+               </tr>
+            </thead>
+            <tbody>
+            </tbody>
+         </table>
       </div>
-
-
-    <form id="searchForm">
-            <label>
-                Search:
-                <input type="text" name="searchString" placeholder="Type your query...">
-            </label>
-            <input type="submit" name="Submit">
-        </form>
-    
-    <div id=search></div>
-
-<script src="apiscript.js"></script> 
-</body>
+      <script src="apiscript.js"></script> 
+   </body>
 </html>

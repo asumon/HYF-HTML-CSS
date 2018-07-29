@@ -24,13 +24,11 @@ function getData(url, callback) {
 }
 
 //const url = 'https://api.github.com/orgs/HackYourFuture/repos'; 
-const url = 'https://api.github.com/search/repositories?q=user:HackYourFuture+' + searchIteam
+//const url = 'https://api.github.com/search/repositories?q=user:HackYourFuture+' + searchIteam
 //const form =document.querySelector('#searchIteam');
-const tbody = document.querySelector('#repolist > tbody');
 const button = document.querySelector('#btn');
 const clearButton = document.querySelector('#clear');
 const searchInput = document.querySelector('#search')
-const ul = document.createElement('UL');
 
 
 clearButton.addEventListener('click', () => {

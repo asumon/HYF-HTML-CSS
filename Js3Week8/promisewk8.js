@@ -1,8 +1,7 @@
 "use:strict";
-const button = document.querySelector('#btn');
+const movieRenderingButton = document.querySelector('#btn');
 //const searchmovie = document.querySelector('#searchbtn');
 const clearButton = document.querySelector('#clear');
-
 const moviesUrl='https://gist.githubusercontent.com/pankaj28843/08f397fcea7c760a99206bcb0ae8d0a4/raw/02d8bc9ec9a73e463b13c44df77a87255def5ab9/movies.json'
 const getMoviesPromise=fetch(moviesUrl);
 
@@ -14,15 +13,15 @@ clearButton.addEventListener('click', () => {
 })
 
 // Get the Movies List
-button.addEventListener('click', () => {
+movieRenderingButton.addEventListener('click', () => {
 
     getMoviesPromise.then((response)=>response.json())
-    .then((body) =>{
-        const lis =body.map(data=> {
-           // console.log(data);
+    .then((movieList) =>{
+        const lis =movieList.map(movieData=> {
+            //console.log(movieList);
          
     let li = document.createElement('li');
-    let text=`Movie Title: ${data.title},Year:${data.year}, Rating: ${data.rating},Votes: ${data.votes}`
+    let text=`Movie Title: ${movieData.title},Year:${movieData.year}, Rating: ${movieData.rating},Votes: ${movieData.votes}`
     let textNode = document.createTextNode(text);
     li.appendChild(textNode);
     return li;
@@ -32,6 +31,11 @@ button.addEventListener('click', () => {
             document.getElementById('mylist').appendChild(li);    
             })
             
+//.then((movieList)=>{
+  //  console.log(movieList);
+
+//})
+
        // .catch((err)=>console.log(err));
 
        

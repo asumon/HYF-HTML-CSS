@@ -1,7 +1,8 @@
 
 "use:strict";
 //arr=[1,2,3,4,5,6,7];
-let userInput=prompt("Enter Your Number:");
+//let userInput=prompt("Enter Your Number:");
+let userInput=1000;
 
 let arr = [];
 for( let i=1; i<=userInput;i++){
